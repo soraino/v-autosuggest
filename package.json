@@ -10,7 +10,7 @@
     "vue",
     "vuejs",
     "autosuggest",
-    "autocomplete",
+    "autocomplete"
   ],
   "license": "MIT",
   "main": "Autosuggest.vue",
