@@ -7,7 +7,7 @@
               <div :is="statusComponent" :suggestionStatusEnum="this.currentStatus"></div>
             </li>
             <li class="v-suggestion-item" :key="index" v-for="(item ,index) in suggestionArray.slice(0, this.maxSuggestion)" @click="selectSuggestion(item)">
-                <div :is="suggItemComponent" :item="item" :valueProp="this.suggValue"></div>
+                <div :is="suggItemComponent" :item="item" :valueProp="suggValue"></div>
             </li>
         </ul>
     </div>

@@ -114,8 +114,8 @@ There's 2 ways of inserting the data for v-autosuggest
 ####Basic usage with Online querying (not limited to ajax)
 
     <template>
-    	    <VAutosuggest v-model="searchData" :getItemFromAjax="ajaxCall" :suggValue="'name'" :suggDescript="'height'"/>
-        </template>
+        <VAutosuggest v-model="searchData" :getItemFromAjax="ajaxCall"/>
+    </template>
     <script>
     import axios from 'axios'
     import VAutosuggest from 'v-autosuggest'
@@ -134,7 +134,7 @@ There's 2 ways of inserting the data for v-autosuggest
         ajaxCall: async function (query) {
           const response = await axios.get(`https://swapi.co/api/people/?search=${query}`)
           return response.data.results.reduce((Accumulative, current) => {
-        Accumulative.push({value: current.name, description: 'Height: '+ current.description + 'cm'})
+        Accumulative.push({value: current.name, description: 'Height: '+ current.height + 'cm'})
         return Accumulative
       })
         }
@@ -153,7 +153,7 @@ There's 2 ways of inserting the data for v-autosuggest
 ####Basic usage with static data (eg: JSON file, array, xml)
 
     <template>
-    	    <VAutosuggest v-model="searchData" :suggValue="'name'" :suggDescript="'height'"/>
+    	    <VAutosuggest v-model="searchData" :suggValue="'name'"/>
         </template>
     <script>
     import axios from 'axios'

@@ -1,7 +1,7 @@
 {
   "name": "v-autosuggest",
   "description": "A Vue.js(2.x) component that auto completes/suggests input for dynamic and static data querying.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "name": "soraino",
     "email": "personalstuff97@gmail.com"
