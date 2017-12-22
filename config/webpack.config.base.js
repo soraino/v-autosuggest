@@ -35,6 +35,14 @@ module.exports = {
     new webpack.DefinePlugin({
       'VERSION': JSON.stringify(config.version),
     }),
+    new webpack.optimize.UglifyJsPlugin( {
+      minimize : true,
+      sourceMap : false,
+      mangle: true,
+      compress: {
+        warnings: false
+      }
+    }),
     new ExtractTextPlugin(outputFile + '.css'),
   ],
 }
