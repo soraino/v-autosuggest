@@ -1,7 +1,7 @@
 <template>
   <div>
-      <h2 v-text="item.name"></h2>
-      <p v-text="'Height :'+ item.height +'cm'"></p>
+      <h2 v-text="item[this.valueProp]"></h2>
+      <p v-text=" item.description"></p>
   </div>
 </template>
 
@@ -27,6 +27,11 @@ export default {
     item: {
       type: Object,
       required: true
+    },
+    valueProp:{
+      type: String,
+      required: false,
+      default: 'value',
     }
   }
 }

@@ -7,7 +7,7 @@
               <div :is="statusComponent" :suggestionStatusEnum="this.currentStatus"></div>
             </li>
             <li class="v-suggestion-item" :key="index" v-for="(item ,index) in suggestionArray.slice(0, this.maxSuggestion)" @click="selectSuggestion(item)">
-                <div :is="suggItemComponent" :item="item"></div>
+                <div :is="suggItemComponent" :item="item" :valueProp="this.suggValue"></div>
             </li>
         </ul>
     </div>
@@ -74,7 +74,7 @@ export default {
       type: Object,
       required: false
     },
-    returnSugg: {
+    suggValue: {
       type: String,
       required: false,
       default: 'value'
@@ -127,7 +127,7 @@ export default {
     getData: async function () {
       if (this.items) {
         this.suggestionArray = this.items.reduce((accumulative, current) => {
-          if (current[this.returnSugg].trim().toLowerCase().includes(this.searchData.toLowerCase())) { accumulative.push(current) }
+          if (current[this.suggValue].trim().toLowerCase().includes(this.searchData.toLowerCase())) { accumulative.push(current) }
           return accumulative
         }, [])
       } else {
@@ -140,7 +140,7 @@ export default {
       }
     },
     selectSuggestion (item) {
-      this.searchData = item[this.returnSugg]
+      this.searchData = item[this.suggValue]
       this.suggestionArray = []
       this.currentStatus = this.status.closeStatus
     },
