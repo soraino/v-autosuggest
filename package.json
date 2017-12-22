@@ -1,7 +1,7 @@
 {
   "name": "v-autosuggest",
   "description": "A Vue.js(2.x) component that auto completes/suggests input for dynamic and static data querying.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "soraino",
     "email": "personalstuff97@gmail.com"
@@ -9,19 +9,11 @@
   "keywords": [
     "vue",
     "vuejs",
-    "plugin"
+    "autosuggest",
+    "autocomplete",
   ],
   "license": "MIT",
-  "main": "dist/v-autosuggest.common.js",
-  "unpkg": "dist/v-autosuggest.browser.js",
-  "module": "index.js",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.dev.js --progress --watch",
-    "build": "npm run build:browser && npm run build:common",
-    "build:browser": "cross-env NODE_ENV=production webpack --config config/webpack.config.browser.js --progress --hide-modules",
-    "build:common": "cross-env NODE_ENV=production webpack --config config/webpack.config.common.js --progress --hide-modules",
-    "prepublish": "npm run build"
-  },
+  "main": "Autosuggest.vue",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soraino/v-autosuggest.git"
@@ -30,6 +22,9 @@
     "url": "https://github.com/soraino/v-autosuggest/issues"
   },
   "homepage": "https://github.com/soraino/v-autosuggest#readme",
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-eslint": "^7.2.3",
@@ -48,12 +43,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^2.3.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
-    "vue-loader": "^10.0.0",
-    "vue-template-compiler": "^2.1.6",
-    "webpack": "^2.1.0-beta.28",
-    "webpack-merge": "^1.1.2"
-  },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0"
+    "webpack": "^3.7.1",
+    "vue": "^2.5.2"
   }
 }

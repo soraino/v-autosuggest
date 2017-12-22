@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'SuggestionStatus',
+  name: 'suggestionStatus',
   props: {
     suggestionStatusEnum: {
       required: true,

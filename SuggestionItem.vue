@@ -22,7 +22,7 @@ div:hover{
 
 <script>
 export default {
-  name: 'SuggestionItem',
+  name: 'suggestionItem',
   props: {
     item: {
       type: Object,

@@ -40,8 +40,8 @@ li{
 </style>
 
 <script>
-import SuggestionItem from './SuggestionItem.vue'
-import SuggestionStatus from './SuggestionStatus.vue'
+import suggestionItem from './SuggestionItem.vue'
+import suggestionStatus from './SuggestionStatus.vue'
 
 function debounce (func, wait, immediate) {
   let timeout
@@ -60,7 +60,7 @@ function debounce (func, wait, immediate) {
 };
 
 export default {
-  name: 'VAutoSuggest',
+  name: 'autoSuggest',
   props: {
     getItemFromAjax: {
       type: Function,
@@ -91,8 +91,8 @@ export default {
   },
   data () {
     return {
-      statusComponent: this.suggStatusComp || SuggestionStatus,
-      suggItemComponent: this.suggItemComp || SuggestionItem,
+      statusComponent: this.suggStatusComp || suggestionStatus,
+      suggItemComponent: this.suggItemComp || suggestionItem,
       searchData: '',
       suggestionArray: [], // this is the array of data that will be shown to the user as suggestions
       currentStatus: 3,
