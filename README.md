@@ -180,10 +180,12 @@ You are able to change the component for the status and suggestion to suit your 
 
 
 
-This is the status component
-![Status component](https://preview.ibb.co/dOgrS6/status_Component.gif)
+#### This is the status component
 
-These are the suggestion items component
+![Status component](https://image.ibb.co/hNthZm/status_Component.gif)
+
+#### These are the suggestion items component
+
 ![Suggestion Item component](https://preview.ibb.co/cpnbum/suggestion_Item_Component.png)
 
 
