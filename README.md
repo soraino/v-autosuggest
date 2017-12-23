@@ -107,7 +107,7 @@ In your template you can use this syntax:
 # Example
 There's 2 ways of inserting the data for v-autosuggest
 
-##Basic Usage
+## Basic Usage
  1. Through online querying (ie: ajax, firebase , etc...)
  2. Static JSON file or equivalent
 
@@ -174,7 +174,7 @@ There's 2 ways of inserting the data for v-autosuggest
     </script>
 
 
-##Advanced Usage
+## Advanced Usage
 
 You are able to change the component for the status and suggestion to suit your own website.
 
