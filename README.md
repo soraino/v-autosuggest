@@ -450,6 +450,6 @@ When trying to make this component, be sure to **include these 2 props**
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[MIT](https://github.com/soraino/v-autosuggest/blob/master/LICENSE.md)
 
 
