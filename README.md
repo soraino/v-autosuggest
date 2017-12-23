@@ -181,10 +181,10 @@ You are able to change the component for the status and suggestion to suit your 
 
 
 This is the status component
-![Status component](https://doc-0g-2c-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/vmoka8ggsk2fb95q3t3tv074e78svbhq/1513922400000/09135479354688842249/*/1FhhzGerBrqdhakDPSggSFrjY1Xgbm0Et)
+![Status component](https://preview.ibb.co/dOgrS6/status_Component.gif)
 
 These are the suggestion items component
-![Suggestion Item component](https://doc-0c-2c-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/hol9eb0ev4a8trrf9ml70d2j86s4ab9e/1513922400000/09135479354688842249/*/15zikjOl_FnsC9MufGtWt2yEXnL5FoCre)
+![Suggestion Item component](https://preview.ibb.co/cpnbum/suggestion_Item_Component.png)
 
 
 You will be able to change the status and suggestion item component by passing your own into the suggStatusComp and suggItemComp respectively.
