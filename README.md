@@ -48,7 +48,7 @@ In your template you can use this syntax:
 
 
 ----------
-#Properties
+# Properties
 <table >
   <tr>
     <th>Property Name<br></th>
@@ -111,7 +111,7 @@ There's 2 ways of inserting the data for v-autosuggest
  1. Through online querying (ie: ajax, firebase , etc...)
  2. Static JSON file or equivalent
 
-####Basic usage with Online querying (not limited to ajax)
+#### Basic usage with Online querying (not limited to ajax)
 
     <template>
         <VAutosuggest v-model="searchData" :getItemFromAjax="ajaxCall"/>
@@ -150,7 +150,7 @@ There's 2 ways of inserting the data for v-autosuggest
 ---
 
 
-####Basic usage with static data (eg: JSON file, array, xml)
+#### Basic usage with static data (eg: JSON file, array, xml)
 
     <template>
     	    <VAutosuggest v-model="searchData" :suggValue="'name'"/>
@@ -191,7 +191,7 @@ You will be able to change the status and suggestion item component by passing y
 
 **But there are some caveats.**
 
-####Suggestion Status Component
+#### Suggestion Status Component
 When trying to make this component, be sure to **include this prop and data**
 
 	
@@ -251,7 +251,7 @@ When trying to make this component, be sure to **include this prop and data**
 ----------
 
 
-###Status enum table
+### Status enum table
 
 <table>
 	<thead>
@@ -314,7 +314,7 @@ When trying to make this component, be sure to **include this prop and data**
 		</tr>
 	</tbody>
 </table>
-####Example Suggestion Item component
+#### Example Suggestion Item component
 
         <template>
       <div v-show="suggestionStatusEnum != suggestionStatus.nuetralStatus || suggestionStatusEnum != suggestionStatus.closeStatus">
@@ -373,7 +373,7 @@ When trying to make this component, be sure to **include this prop and data**
     </script>
 
 
-####Suggestion Status Component
+#### Suggestion Status Component
 When trying to make this component, be sure to **include these 2 props**
 
     ...props: {
@@ -418,7 +418,7 @@ When trying to make this component, be sure to **include these 2 props**
 	</tbody>
 </table>
 
-####Example Suggestion Item component
+#### Example Suggestion Item component
 
     <template>
       <div>
