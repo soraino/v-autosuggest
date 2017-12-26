@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/v-autosuggest.svg) ![npm](https://img.shields.io/npm/dm/v-autosuggest.svg)](https://www.npmjs.com/package/v-autosuggest)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
-A Vue.js(2.x) component that auto completes/suggests input for dynamic and static data querying.
+A simple modular Vuejs component that autosuggest input from a dyanamic or static data querying.
 
 ## Table of contents
 
