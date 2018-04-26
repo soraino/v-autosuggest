@@ -68,7 +68,7 @@ In your template you can use this syntax:
     <td>suggValue</td>
     <td>String</td>
     <td>false</td>
-    <td>"value"<br></td>
+    <td>"value" or "item.value" for nested value<br></td>
     <td>the property name that is the main thing that is being queried<br></td>
   </tr>
   <tr>
