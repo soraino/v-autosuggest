@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h2 v-text="item[this.valueProp]"></h2>
+      <h2 v-text="valueData"></h2>
       <p v-text=" item.description"></p>
   </div>
 </template>
@@ -32,6 +32,16 @@ export default {
       type: String,
       required: false,
       default: 'value',
+    }
+  },
+  computed:{
+    valueData(){
+      let currVal = this.item;
+      const objKeys = this.valueProp.split('.')
+      for(let i = 0 ; i<objKeys.length; i++){
+          currVal = currVal[objKeys[i]]
+      }
+      return currVal
     }
   }
 }

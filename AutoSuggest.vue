@@ -127,7 +127,12 @@ export default {
     getData: async function () {
       if (this.items) {
         this.suggestionArray = this.items.reduce((accumulative, current) => {
-          if (current[this.suggValue].trim().toLowerCase().includes(this.searchData.toLowerCase())) { accumulative.push(current) }
+          let currVal = current;
+          const objKeys = this.suggValue.split('.')
+          for(let i = 0 ; i<objKeys.length; i++){
+              currVal = currVal[objKeys[i]]
+          }
+          if (currVal.trim().toLowerCase().includes(this.searchData.toLowerCase())) { accumulative.push(current) }
           return accumulative
         }, [])
       } else {
@@ -140,7 +145,12 @@ export default {
       }
     },
     selectSuggestion (item) {
-      this.searchData = item[this.suggValue]
+      let currVal = item;
+      const objKeys = this.suggValue.split('.')
+      for(let i = 0 ; i<objKeys.length; i++){
+          currVal = currVal[objKeys[i]]
+      }
+      this.searchData = currVal
       this.suggestionArray = []
       this.currentStatus = this.status.closeStatus
     },
