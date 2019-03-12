@@ -13,7 +13,7 @@
     "autocomplete"
   ],
   "license": "MIT",
-  "main": "Autosuggest.vue",
+  "main": "AutoSuggest.vue",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soraino/v-autosuggest.git"
