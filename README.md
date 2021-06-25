@@ -43,6 +43,7 @@ In your template you can use this syntax:
 	    :suggItemComp="suggItemComponent"
 	    :items="staticSuggArray"
 	    :maxSuggestion="maxSugg"
+      :inputClass="'form-control'"
     />
     
 
@@ -98,6 +99,13 @@ In your template you can use this syntax:
     <td>false</td>
     <td>5</td>
     <td>Max number of suggestion item is being shown on screen<br></td>
+  </tr>
+  <tr>
+    <td>inputClass</td>
+    <td>String</td>
+    <td>false</td>
+    <td>v-autocomplete-input</td>
+    <td>Defines the class for the input tag which you can override with your own class like bootstrap's form-control<br></td>
   </tr>
 </table>
 
@@ -316,6 +324,7 @@ When trying to make this component, be sure to **include this prop and data**
 		</tr>
 	</tbody>
 </table>
+
 #### Example Suggestion Item component
 
         <template>
