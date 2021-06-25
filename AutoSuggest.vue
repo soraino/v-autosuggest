@@ -1,6 +1,6 @@
 <template>
     <div class="v-autocomplete">
-        <input class="v-autocomplete-input" type="text" v-model.trim="searchData" 
+        <input :class="inputClass" type="text" v-model.trim="searchData" 
           @input="searchInputChange" @keydown.up="moveUp" @keydown.down="moveDown" @keyup.enter="enterPress"/>
         <ul class="v-suggestion-box" v-show = "currentStatus !== status.closeStatus">
             <li>
@@ -78,6 +78,11 @@ export default {
       type: String,
       required: false,
       default: 'value'
+    },
+    inputClass:{
+      type: String,
+      required: false,
+      default: 'v-autocomplete-input'
     },
     items: {
       type: Array,
