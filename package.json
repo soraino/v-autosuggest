@@ -1,7 +1,7 @@
 {
   "name": "v-autosuggest",
   "description": "A simple modular Vuejs component that autosuggest input from a dyanamic or static data querying.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": {
     "name": "soraino",
     "email": "personalstuff97@gmail.com"
