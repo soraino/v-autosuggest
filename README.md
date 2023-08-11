@@ -1,4 +1,7 @@
-﻿# v-autosuggest
+
+> :warning: **This component is no longer being maintained! Do look for other alternatives if you're still using Vue 1.x and 2.x**
+
+ # v-autosuggest
 
 [![npm](https://img.shields.io/npm/v/v-autosuggest.svg) ![npm](https://img.shields.io/npm/dm/v-autosuggest.svg)](https://www.npmjs.com/package/v-autosuggest)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
